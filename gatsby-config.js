@@ -67,6 +67,8 @@ module.exports = {
             project: `
               _id: String
               pages: [pages]
+              description: String
+              keywords: String
               userId: String
               name: String
               createdAt: String
@@ -75,6 +77,8 @@ module.exports = {
             pages: `
               _id: String
               title: String
+              description: String
+              slug: String
               json: String
             `
           }

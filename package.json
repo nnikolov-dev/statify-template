@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@bit/nnikolov-dev.statify.container": "file:./components/container",
     "@craftjs/core": "^0.1.0-beta.16",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
@@ -24,14 +25,21 @@
     "postcss": "^8.2.6",
     "prop-types": "^15.7.2",
     "re-resizable": "^6.9.0",
-    "react": "^16.12.0",
+    "react": "^16.13.1 || ^17.0.0",
     "react-contenteditable": "^3.3.5",
-    "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-youtube": "^7.13.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "@bit/nnikolov-dev.statify.button": "^1.0.3",
+    "@bit/nnikolov-dev.statify.num-to-measurement": "^1.0.3",
+    "@bit/nnikolov-dev.statify.resizer": "^1.0.3",
+    "@bit/nnikolov-dev.statify.text": "^1.0.3",
+    "@bit/nnikolov-dev.statify.video": "^1.0.3",
+    "@hot-loader/react-dom": "^16.13.1 || ^17.0.0",
+    "react-dom": "^16.13.1 || ^17.0.0"
   },
   "devDependencies": {
+    "bit-bin": "^14.8.8",
     "prettier": "2.2.1",
     "tailwindcss": "^2.0.3"
   },
@@ -54,5 +62,10 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }
