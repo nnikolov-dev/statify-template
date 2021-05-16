@@ -6,7 +6,10 @@ import Text from '@bit/nnikolov-dev.statify.text'
 import Button from '@bit/nnikolov-dev.statify.button'
 import Container from '@bit/nnikolov-dev.statify.container'
 import Video from '@bit/nnikolov-dev.statify.video'
+import Link from '@bit/nnikolov-dev.statify.link'
+import Image from '@bit/nnikolov-dev.statify.image'
 import SEO from '../components/SEO'
+
 
 const App = ({data}) => {
   const {allPages: {nodes: [pageData]}} = data
@@ -14,7 +17,7 @@ const App = ({data}) => {
   return (
     <>
       <SEO title={pageData.title} description={pageData.description} />
-      <Editor enabled={false} resolver={{Text, Button, Container, Video}}>
+      <Editor enabled={false} resolver={{Text, Button, Container, Video, Link, Image}}>
         <Frame data={json} />
       </Editor>
     </>

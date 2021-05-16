@@ -1,32 +1,12 @@
 require("dotenv").config();
-const projectAPI = `${process.env.ENDPOINT_URI}/project/${process.env.PROJECT_ID}`;
-
-const exampleDataFromApi = [
-  {
-      url: "post-1",
-      images: [
-          {
-              url: "image-1.jpg",
-              modified: 1556752476267
-          },
-          {
-              url: "image-2.jpg",
-              modified: 1556752702168
-          }
-      ],
-      author: {
-          firstname: "John",
-          lastname: "Doe"
-      }
-  }
-];
+const projectAPI = `${process.env.GATSBY_API_URL}/api/project/${process.env.PROJECT_ID}`;
 
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-  },
+  // siteMetadata: {
+  //   title: `Gatsby Default Starter`,
+  //   description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+  //   author: `@gatsbyjs`,
+  // },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
