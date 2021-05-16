@@ -8,6 +8,7 @@ import Container from '@bit/nnikolov-dev.statify.container'
 import Video from '@bit/nnikolov-dev.statify.video'
 import Link from '@bit/nnikolov-dev.statify.link'
 import Image from '@bit/nnikolov-dev.statify.image'
+import Responsive from '@bit/nnikolov-dev.statify.responsive'
 import SEO from '../components/SEO'
 
 
@@ -17,7 +18,7 @@ const App = ({data}) => {
   return (
     <>
       <SEO title={pageData.title} description={pageData.description} />
-      <Editor enabled={false} resolver={{Text, Button, Container, Video, Link, Image}}>
+      <Editor enabled={false} resolver={{Text, Button, Container, Video, Link, Image, Responsive}}>
         <Frame data={json} />
       </Editor>
     </>

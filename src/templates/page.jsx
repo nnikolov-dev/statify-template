@@ -7,6 +7,7 @@ import Container from '@bit/nnikolov-dev.statify.container'
 import Video from '@bit/nnikolov-dev.statify.video'
 import Link from '@bit/nnikolov-dev.statify.link'
 import Image from '@bit/nnikolov-dev.statify.image'
+import Responsive from '@bit/nnikolov-dev.statify.responsive'
 import '../assets/style.css'
 import SEO from '../components/SEO'
 
@@ -17,7 +18,7 @@ const Page = ({pageContext: { pageData } }) => {
       <SEO title={pageData.title} description={pageData.description} />
       <Editor
         resolver={{
-          Container, Text, Video, Button, Image, Link
+          Container, Text, Video, Button, Image, Link, Responsive
         }}
         enabled={false}
       >

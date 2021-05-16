@@ -37,6 +37,7 @@
     "@bit/nnikolov-dev.statify.container": "^1.0.4",
     "@bit/nnikolov-dev.statify.link": "^1.0.4",
     "@bit/nnikolov-dev.statify.image": "^1.0.4",
+    "@bit/nnikolov-dev.statify.responsive": "^1.0.5",
     "@hot-loader/react-dom": "^16.13.1 || ^17.0.0",
     "react-dom": "^16.13.1 || ^17.0.0"
   },
