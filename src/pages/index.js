@@ -10,6 +10,7 @@ import Link from '@bit/nnikolov-dev.statify.link'
 import Image from '@bit/nnikolov-dev.statify.image'
 import Responsive from '@bit/nnikolov-dev.statify.responsive'
 import SEO from '../components/SEO'
+import '../assets/style.css'
 
 
 const App = ({data}) => {

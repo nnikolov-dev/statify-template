@@ -1,11 +1,21 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "statify-template",
+  "private": false,
+  "description": "The template used to for building and rendering Statify projects",
+  "version": "1.0.0",
+  "author": "Nikita Nikolov <nn00317@surrey.ac.uk>",
   "dependencies": {
+    "@bit/nnikolov-dev.statify.button": "^1.0.4",
+    "@bit/nnikolov-dev.statify.container": "^1.0.4",
+    "@bit/nnikolov-dev.statify.image": "^1.0.4",
+    "@bit/nnikolov-dev.statify.link": "^1.0.4",
+    "@bit/nnikolov-dev.statify.num-to-measurement": "^1.0.3",
+    "@bit/nnikolov-dev.statify.resizer": "^1.0.4",
+    "@bit/nnikolov-dev.statify.responsive": "^1.0.5",
+    "@bit/nnikolov-dev.statify.text": "^1.0.4",
+    "@bit/nnikolov-dev.statify.video": "^1.0.3",
     "@craftjs/core": "^0.1.0-beta.16",
+    "@hot-loader/react-dom": "^16.13.1 || ^17.0.0",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
     "dotenv": "^8.2.0",
@@ -21,54 +31,34 @@
     "gatsby-source-rest-api": "^0.2.3",
     "gatsby-transformer-sharp": "^2.12.0",
     "lzutf8": "^0.5.8",
-    "postcss": "^8.2.6",
+    "postcss": "^8.2.15",
     "prop-types": "^15.7.2",
     "re-resizable": "^6.9.0",
     "react": "^16.13.1 || ^17.0.0",
     "react-contenteditable": "^3.3.5",
+    "react-dom": "^16.13.1 || ^17.0.0",
     "react-helmet": "^6.1.0",
     "react-youtube": "^7.13.1",
     "styled-components": "^5.2.1",
-    "@bit/nnikolov-dev.statify.button": "^1.0.4",
-    "@bit/nnikolov-dev.statify.num-to-measurement": "^1.0.3",
-    "@bit/nnikolov-dev.statify.resizer": "^1.0.4",
-    "@bit/nnikolov-dev.statify.text": "^1.0.4",
-    "@bit/nnikolov-dev.statify.video": "^1.0.3",
-    "@bit/nnikolov-dev.statify.container": "^1.0.4",
-    "@bit/nnikolov-dev.statify.link": "^1.0.4",
-    "@bit/nnikolov-dev.statify.image": "^1.0.4",
-    "@bit/nnikolov-dev.statify.responsive": "^1.0.5",
-    "@hot-loader/react-dom": "^16.13.1 || ^17.0.0",
-    "react-dom": "^16.13.1 || ^17.0.0"
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "bit-bin": "^14.8.8",
-    "prettier": "2.2.1",
-    "tailwindcss": "^2.0.3"
+    "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "statify"
   ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "bit": {
-    "env": {},
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
+    "url": "https://github.com/nnikolov-dev/statify-template"
   }
 }
